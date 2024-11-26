@@ -1,13 +1,72 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0; /* used to specify how much blank space there is before body begins */
+  font-family: 'Inter'; /* to specify the font-family of the entire app*/
+  /* width: 681px;
+  height: 459; */
+  background-color: #282D35;
 }
+
+header {
+  height: 90px; /* to specify how much space the header should take up*/
+  background-color: #000000;
+  padding: 30px 25px; /* to specify spacing of top/bottom, left/right of elements in header. Centers the elements*/
+}
+
+.navbar--mainbar {
+  display: flex; /* parent element of flex box, controls alignment*/
+  align-items: center; /* aligns children flex box components to center*/
+  height: 100%; /* ensures that the navbar takes up the entire header*/
+}
+
+.navbar--image {
+  width: 28.93px;
+  height: 28.93px;
+  margin-right: 7px; /* to specify how much space after this element the other element should start*/
+}
+
+.navbar--text {
+  color: #61DAFB;
+  width: 122.39px;
+  height: 22.25px;
+  font-weight: 700;
+  font-size: 22.2535px;
+}
+
+.navbar--secondtext {
+  color: #DEEBF8;
+  width: 259px;
+  height: 21px;
+  font-weight: 600;
+  font-size: 16px;
+  }
+
+  main {
+    color: #FFFFFF;
+    padding: 60px 30px;
+    background-image: url(./reactjs-iconhalf.png);
+    background-repeat: no-repeat;
+    background-position: right 75%;
+  } 
+ 
+  main > h1 {
+    margin: 0;
+    font-size: 2.4rem;
+  }
+
+  .main--unorderedList {
+    margin-top: 46px;
+    max-width: 400px;
+  }
+
+  .main--unorderedList > li {
+    padding-block: 10px;
+    line-height: 19px;
+  }
+
+  .main--unorderedList > li::marker {
+    color: #61DAFB;
+  }

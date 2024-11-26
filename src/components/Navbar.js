@@ -1,6 +1,5 @@
 import React from 'react'
-import Main from './components/Main.js'
-import Navbar from './components/Navbar.js'
+import ReactImage from '../reactjs-icon.png'
 
 /**
  * Challenge: complete the Navbar to match the Figma design
@@ -13,11 +12,14 @@ import Navbar from './components/Navbar.js'
  *   colors, sizes, font information, etc.
  */
 
-export default function App(){
+
+export default function Navbar(){
     return(
-      <>
-        <Navbar />
-        <Main />
-       </>
+        <header>
+            <nav className='navbar--mainbar'>
+                <img className='navbar--image' src={ReactImage}/>
+                <p className='navbar--text'>ReactFacts</p>
+            </nav>
+        </header>
     )
 }

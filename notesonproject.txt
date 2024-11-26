@@ -1,0 +1,10 @@
+What I'm learning:
+1. Basics about React components: how to create them, export them, import them, use them
+2. CSS basics and styling
+3. Writing JSX to display elements on the screen
+
+
+Questions:
+1. There's spacing between the main component and the navbar component, not sure why.
+    - there's some collapsing margin with the top of the h1 that's pushing the main section down
+    - tip: put background on the body, so we don't have to worry about the collapsing margin
